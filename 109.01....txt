@@ -1,0 +1,19 @@
+<!DOCTYPE>
+<html>
+<h>
+<body style="background-color:#5c0025;">
+<time>12:19</time> <date>09Aug2024</date>
+<h1><span style="color:#ff0033;"><i>STAY</span></i> <span style="color:#33cc33;">REAL</span><span style="color:#c9c3b5;">MEDIA</span>🍒</h1>
+<br>
+<b><button>ENTER PASSWORD</b></button>
+<br>
+<p>create your account link⬇<p><a href="https://www.stayreal.org//createaccount;">link</a>
+<h3><i>stay real is a <b>non profit organisation</b> that advocates for voiceless,homeless,orphans of Southern Africa </i></h3>
+<p style="color:blue;"><u>terms&conditions apply</u> <p><a href="https://www.stayreal.org//terms&conditions;">link</a>
+
+<audio controls>
+<src id="michaeljackson we're the world"=audio/.mp3>
+</audio>
+</body>
+</html>
+</body>
