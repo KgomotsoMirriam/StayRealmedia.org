@@ -58,7 +58,7 @@
     <li>Stress Relieve</li>
     </ul>
 
-    <h2>Info about Stay Real Media</h2>
+    <h2>more info</h2>
     <ol>
     <li><p id="Love">Non-profit</p></li>
     <li>Organisation</li>
