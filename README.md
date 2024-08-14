@@ -6,7 +6,7 @@
   <tittle>STAYREAL</tittle>
   <br>
   <br>
-  <img Src="img_Cherry.jpg" width="80" height="80">
+  <img Src="img_Cherries.png" width="80" height="80">
   <br>
   <alt>Picture of a Cherry</alt>
   <br>
