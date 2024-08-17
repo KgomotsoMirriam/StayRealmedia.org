@@ -114,19 +114,19 @@
         </div>
         <div id="images" class="content" role="region">
             <h2>Images</h2>
-            <img src="your-image.jpg" alt="Description of the image">
+            <img src="c:/users/TIFOSATOR98/Pictures/Screenshot_20220514-175557.jpg" alt="Screenshot_20220514-175557">
         </div>
         <div id="videos" class="content" role="region">
             <h2>Videos</h2>
             <video controls>
-                <source src="your-video.mp4" type="video/mp4">
+                <source src="c:/users/TIFOSATOR98/videos/VID_20240814_174527.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
         <div id="audio" class="content" role="region">
             <h2>Audio</h2>
             <audio controls>
-                <source src="your-audio.mp3" type="audio/mp3">
+                <source src="c:/users/TIFOSATOR98/music/zero one eight.mp3" type="audio/mp3">
                 Your browser does not support the audio tag.
             </audio>
         </div>
