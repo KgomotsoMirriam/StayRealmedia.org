@@ -1,5 +1,4 @@
 
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +10,7 @@
             margin: 0;
             padding: 0;
             background-color: #f0f0f0;
-            padding-bottom: 100px; /* Add padding to accommodate footer */
+            padding-bottom: 150px; /* Increased padding to accommodate footer */
         }
         .header {
             background-color: #333;
@@ -62,9 +61,7 @@
         }
         .content {
             display: none; /* Hide content by default */
-            margin-top: 10px;
-            width: 100px;
-            height: 5px;
+            margin-top: 20px;
         }
         .footer {
             background-color: #333;
@@ -101,45 +98,45 @@
             <h2>Our Mission</h2>
             <p>Stay Real Media™ is a non-profit organization dedicated to helping disadvantaged people. Our goal is to provide valuable resources and opportunities to those in need through our various media channels.</p>
         </div>
-        <button class="button" onclick="showContent('live-broadcast')">Live Broadcast</button>
-        <button class="button" onclick="showContent('podcast')">Podcast</button>
-        <button class="button" onclick="showContent('images')">Images</button>
-        <button class="button" onclick="showContent('videos')">Videos</button>
-        <button class="button" onclick="showContent('audio')">Audio</button>
+        <button class="button" aria-expanded="false" aria-controls="live-broadcast" onclick="showContent('live-broadcast', this)">Live Broadcast</button>
+        <button class="button" aria-expanded="false" aria-controls="podcast" onclick="showContent('podcast', this)">Podcast</button>
+        <button class="button" aria-expanded="false" aria-controls="images" onclick="showContent('images', this)">Images</button>
+        <button class="button" aria-expanded="false" aria-controls="videos" onclick="showContent('videos', this)">Videos</button>
+        <button class="button" aria-expanded="false" aria-controls="audio" onclick="showContent('audio', this)">Audio</button>
         
-        <div id="live-broadcast" class="content">
+        <div id="live-broadcast" class="content" role="region">
             <h2>Live Broadcast</h2>
             <p>Placeholder for live broadcast content. Add your live broadcast embed here.</p>
         </div>
-        <div id="podcast" class="content">
+        <div id="podcast" class="content" role="region">
             <h2>Podcast</h2>
             <p>Placeholder for podcast content. Add your podcast embed here.</p>
         </div>
-        <div id="images" class="content">
+        <div id="images" class="content" role="region">
             <h2>Images</h2>
-            <img src="c:/users/TIFOSATOR98/Pictures/nny.jpg" alt="Sample Image">
+            <img src="your-image.jpg" alt="Description of the image">
         </div>
-        <div id="videos" class="content">
+        <div id="videos" class="content" role="region">
             <h2>Videos</h2>
             <video controls>
-                <source src="c:/users/TIFOSATOR98/videos/VID_20240814_174527.mp4" type="video/mp4">
+                <source src="your-video.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
-        <div id="audio" class="content">
+        <div id="audio" class="content" role="region">
             <h2>Audio</h2>
             <audio controls>
-                <source src="c:/users/Tifosator98/music/amazing grace.mp3" type="audio/mp3">
+                <source src="your-audio.mp3" type="audio/mp3">
                 Your browser does not support the audio tag.
             </audio>
         </div>
     </div>
     <footer class="footer">
-        <p>Thank you for visiting Stay Real Media™.We hope you enjoy your stay with us and find our content valuable.We appreciate your support and look forward to having you visit again soon!</p>
+        <p>Thank you for visiting Stay Real Media™. We hope you enjoy your stay with us and find our content valuable. We appreciate your support and look forward to having you visit again soon!</p>
         <p>&copy; 2024 Stay Real Media™. All rights reserved.</p>
     </footer>
     <script>
-        function showContent(id) {
+        function showContent(id, button) {
             // Hide all content sections
             var contents = document.querySelectorAll('.content');
             contents.forEach(function(content) {
@@ -151,6 +148,13 @@
             if (selectedContent) {
                 selectedContent.style.display = 'block';
             }
+
+            // Update aria-expanded for accessibility
+            var buttons = document.querySelectorAll('.button');
+            buttons.forEach(function(btn) {
+                btn.setAttribute('aria-expanded', 'false');
+            });
+            button.setAttribute('aria-expanded', 'true');
         }
     </script>
 </body>
